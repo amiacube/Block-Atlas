@@ -1,0 +1,22 @@
+# Block Atlas
+
+> 1,286 Minecraft block IDs with Bloxd.io suggestions and surface-color comparisons from the bundled Java Edition 26.3 reference. There are 1,279 scored rows.
+
+Use the exact Minecraft block ID as the key. Each row describes a representative block or state, not every possible state, biome, rotation, or animation frame. Suggestions may be decorative or mode-dependent rather than functionally equivalent. The bundled atlas uses reviewed candidate shortlists, not an exhaustive nearest-color search.
+
+## Catalog downloads
+
+- [Spreadsheet CSV](./exports/block-atlas.csv): One block per row, with exact IDs, suggested Bloxd names/states, tiers, overall scores, sRGB swatches and notes.
+- [Plain-text catalog](./exports/block-atlas.txt): All 1,286 entries grouped by category, with searchable IDs and readable limitations.
+- [Printable PDF](./exports/block-atlas.pdf): A compact reference with category navigation, names, IDs, suggestions and scores.
+- [Original CSV](./data/minecraft-26.3-bloxd.csv): Source columns unchanged.
+- [Snapshot metadata](./data/snapshot.json): Reference versions, counts and asset pins.
+
+## How to read the data
+
+- Color difference is CIEDE2000 (ΔE00). Lower is closer in measured color. A blank score means unscored, not zero.
+- Match tiers describe suitability, not numerical thresholds. Read the limitations before treating a suggestion as a replacement.
+- Mean sRGB colors are written as `#RRGGBB`. Top, sides and exposed samples are distinct. Missing samples must not be inferred.
+- When a Bloxd state name is absent from the simplified CSV, use the base suggestion if present. A missing suggestion is not an instruction to use air or dirt.
+
+The interactive atlas can load other CSVs. The files linked here document the bundled snapshot.
